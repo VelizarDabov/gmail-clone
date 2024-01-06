@@ -16,8 +16,11 @@ import {
   UnfoldMore,
   WatchLater,
 } from "@mui/icons-material";
+import { useSelector } from "react-redux";
+import { selectOpenMail } from "./features/mailSlice";
 const Mail = () => {
   const navigate= useNavigate();
+  const selectedMail = useSelector(selectOpenMail);
   return (
     <div className="mail">
       <div className="mail__tools">
@@ -67,16 +70,16 @@ const Mail = () => {
      <div className="mail__body">
 <div className="mail__bodyHeader">
 <h2>
-  Subject
+  {selectedMail?.subject}
 </h2>
 <LabelImportant  className="mail__important"/>
 <p>
-  title
+{selectedMail?.title}
 </p>
-<p className="mail__time">10PM</p>
+<p className="mail__time">{selectedMail?.time}</p>
 </div>
 <div className="mail__message">
-<p>This is a message</p>
+{selectedMail?.description}
 </div>
      </div>
     </div>

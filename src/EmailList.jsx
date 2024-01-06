@@ -15,9 +15,10 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import Section from "./Section";
 import EmailRow from "./EmailRow";
 import { db } from "./firebase";
+import { useDispatch } from "react-redux";
 const EmailList = () => {
   const [emails, setEmails] = useState([]);
-
+const dispatch = useDispatch();
 
   useEffect(() => {
 db.collection('emails').orderBy('timestamp', 'desc').onSnapshot(snapshot => setEmails(snapshot.docs.map((doc) => ({
