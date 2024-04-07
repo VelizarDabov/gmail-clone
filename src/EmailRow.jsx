@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./EmailRow.css";
 import { Checkbox, IconButton } from "@mui/material";
 
