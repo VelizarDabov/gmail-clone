@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './SidebarOption.css'
 const SidebarOption = ({Icon, title, number, selected}) => {
   return (

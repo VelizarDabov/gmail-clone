@@ -1,7 +1,6 @@
-import React from "react";
 import "./Mail.css";
 import { useNavigate } from "react-router-dom";
-import { Icon, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import {
   ArrowBack,
   CheckCircle,

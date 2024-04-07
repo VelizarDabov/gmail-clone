@@ -1,4 +1,3 @@
-import React from "react";
 import "./Sidebar.css";
 import { Button, IconButton } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
@@ -13,7 +12,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PersonIcon from "@mui/icons-material/Person";
 import DuoIcon from "@mui/icons-material/Duo";
 import PhoneIcon from "@mui/icons-material/Phone";
-import { Label } from "@mui/icons-material";
 import { useDispatch } from "react-redux";
 import { openSendMessage } from "./features/mailSlice";
 const Sidebar = () => {
